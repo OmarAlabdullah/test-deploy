@@ -138,11 +138,11 @@
   </div>
   <div class="main">
     <h1>save data</h1>
-    <form>
+<!--    <form>-->
       <input type="text" name="name" placeholder="name" id="name">
       <input type="text" name="email" placeholder="email" id="email">
-      <button onsubmit="save()">submit</button>
-    </form>
+      <button type="submit" onclick="save()">submit</button>
+<!--    </form>-->
   </div>
 
 </div>
@@ -151,9 +151,9 @@
   <h2>Footer</h2>
 </div>
 <script defer >
-  import firebase from "firebase/compat";
 
   function save(){
+    console.log(document.getElementById("name").value)
     firebase.database().ref("users").set({
       name: document.getElementById("name").value,
       email: document.getElementById("email").value
