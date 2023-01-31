@@ -3,7 +3,7 @@
     "firebase": "^9.16.0"
   },
   "scripts": {
-    "build": "npm install && babel public/scripts -s --minified --compact true -d public/scripts-es5 && bower install && echo 'Done. Ready to deploy.'"
+    "build": "npm install && echo 'Done. Ready to deploy.'"
 
   }
 }
