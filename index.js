@@ -22,8 +22,8 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 function save(){
+    console.log(document.getElementById("name").value)
     firebase.database().ref("users").set({
         name: document.getElementById("name").value,
         email: document.getElementById("email").value
-    })
-}
+    })}

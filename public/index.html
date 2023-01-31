@@ -150,15 +150,7 @@
 <div class="footer">
   <h2>Footer</h2>
 </div>
-<script defer >
-
-  function save(){
-    console.log(document.getElementById("name").value)
-    firebase.database().ref("users").set({
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value
-    })}
-</script>
+<script defer src="index.js"></script>
 <script defer src="/__/firebase/9.16.0/firebase-app-compat.js"></script>
 <!-- include only the Firebase features as you need -->
 <script defer src="/__/firebase/9.16.0/firebase-auth-compat.js"></script>
